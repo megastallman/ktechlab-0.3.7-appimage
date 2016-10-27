@@ -1,0 +1,20 @@
+--- kdirwatch.cpp.orig	2016-09-27 13:38:30.940632685 +0300
++++ kdirwatch.cpp	2016-09-27 13:46:01.329095377 +0300
+@@ -66,7 +66,7 @@
+ 
+ #ifdef HAVE_INOTIFY
+ #include <unistd.h>
+-#include <fcntl.h>
++#include <linux/fcntl.h>
+ #include <sys/syscall.h>
+ #include <linux/types.h>
+ // Linux kernel headers are documented to not compile
+@@ -274,7 +274,7 @@
+ 
+   if ( supports_inotify ) {
+     available += ", Inotify";
+-    fcntl(m_inotify_fd, F_SETFD, FD_CLOEXEC);
++    //fcntl(m_inotify_fd, F_SETFD, FD_CLOEXEC);
+ 
+     mSn = new QSocketNotifier( m_inotify_fd, QSocketNotifier::Read, this );
+     connect( mSn, SIGNAL(activated( int )), this, SLOT( slotActivated() ) );

@@ -1,0 +1,11 @@
+--- discretelogic.cpp	2016-09-27 15:33:03.338416744 +0300
++++ discretelogic.cpp.patched	2016-09-27 15:32:38.909326266 +0300
+@@ -92,7 +92,7 @@
+ LibraryItem* Buffer::libraryItem()
+ {
+ 	return new LibraryItem(
+-		QString::QString("ec/buffer"),
++		QString("ec/buffer"),
+ 		i18n("Buffer"),
+ 		i18n("Logic"),
+ 		"buffer.png",

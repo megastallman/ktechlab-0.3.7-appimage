@@ -1,0 +1,4 @@
+#!/bin/sh
+PAR=$(dirname "$(readlink -f "$0")")
+$PAR/proot-x86_64 -b $PAR/qt3:/tmp/qt3builddir/ $PAR/qt3/bin/ktechlab
+exit

@@ -1,0 +1,23 @@
+--- katehighlight.cpp	2007-05-14 10:52:27.000000000 +0300
++++ katehighlight.cpp.patched	2016-09-27 14:59:30.137754416 +0300
+@@ -3225,7 +3225,7 @@
+   list.append(charAttribute);
+ 
+   KateAttribute* string = new KateAttribute();
+-  string->setTextColor(QColor::QColor("#D00"));
++  string->setTextColor(QColor("#D00"));
+   string->setSelectedTextColor(Qt::red);
+   list.append(string);
+ 
+@@ -3242,9 +3242,9 @@
+ 
+   KateAttribute* alert = new KateAttribute();
+   alert->setTextColor(Qt::black);
+-  alert->setSelectedTextColor( QColor::QColor("#FCC") );
++  alert->setSelectedTextColor( QColor("#FCC") );
+   alert->setBold(true);
+-  alert->setBGColor( QColor::QColor("#FCC") );
++  alert->setBGColor( QColor("#FCC") );
+   list.append(alert);
+ 
+   KateAttribute* functionAttribute = new KateAttribute();

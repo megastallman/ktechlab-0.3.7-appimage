@@ -1,0 +1,11 @@
+--- ecsubcircuit.cpp	2016-09-27 15:32:52.353376015 +0300
++++ ecsubcircuit.cpp.patched	2016-09-27 15:32:27.642284645 +0300
+@@ -27,7 +27,7 @@
+ LibraryItem* ECSubcircuit::libraryItem()
+ {
+ 	return new LibraryItem(
+-		QString::QString("ec/subcircuit"),
++		QString("ec/subcircuit"),
+ 		QString::null,
+ 		QString::null,
+ 		QString::null,

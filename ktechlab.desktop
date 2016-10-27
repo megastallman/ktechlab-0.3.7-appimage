@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Electronics;
+Comment=Circuit simulation
+Exec=AppRun
+GenericName=Ktechlab
+Icon=ktechlab.png
+MimeType=application/x-kicad-project;
+Name=Ktechlab
+Type=Application
