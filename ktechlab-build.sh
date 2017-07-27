@@ -7,7 +7,7 @@ https://sourceforge.net/projects/libpng/files/libpng16/older-releases/1.6.9/libp
 http://downloads.sourceforge.net/libmng/libmng-2.0.2.tar.xz
 http://zlib.net/zlib-1.2.8.tar.xz
 http://slackware.cs.utah.edu/pub/slackware/slackware-13.1/extra/source/kde3-compat/kdelibs3/kdelibs-3.5.10.tar.bz2"
-export PREFIX="/tmp/qt3builddir"
+export PREFIX="/tmp/qt3"
 export PROJDIR=$PWD
 export LANG="C"
 export PATH="$PREFIX/bin:$PATH"

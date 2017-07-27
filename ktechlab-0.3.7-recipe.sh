@@ -11,16 +11,16 @@ if [ ! $(ls | grep AppImageAssistant*AppImage) ]; then
 fi
 
 # Actually build Ktechlab from sources
-if [ ! -f /tmp/qt3builddir/bin/ktechlab ]; then
+if [ ! -f /tmp/qt3/bin/ktechlab ]; then
 	./ktechlab-build.sh
 fi
 
-if [ ! -f /tmp/qt3builddir/bin/designer ]; then
+if [ ! -f /tmp/qt3/bin/designer ]; then
 	echo "ERROR: QT3 is not built!"
 	exit 1
 fi
 
-if [ ! -f /tmp/qt3builddir/bin/ktechlab ]; then
+if [ ! -f /tmp/qt3/bin/ktechlab ]; then
 	echo "ERROR: Ktechlab is not built!"
 	exit 1
 fi
@@ -36,10 +36,7 @@ cp ../ktechlab.desktop .
 cp ../VERSION .
 
 mkdir qt3
-rsync -av /tmp/qt3builddir/ qt3/ --exclude=doc --exclude=src --exclude=man --exclude=phrasebooks --exclude=mkspecs --exclude=include --exclude=translations --exclude=templates
-
-wget https://raw.githubusercontent.com/proot-me/proot-static-build/master/static/proot-x86_64
-chmod +x proot-x86_64
+rsync -av /tmp/qt3/ qt3/ --exclude=doc --exclude=src --exclude=man --exclude=phrasebooks --exclude=mkspecs --exclude=include --exclude=translations --exclude=templates
 
 cd $PROJDIR
 chmod +x AppImageAssistant* 

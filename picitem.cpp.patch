@@ -1,5 +1,5 @@
 --- picitem.cpp	2009-02-08 15:47:03.000000000 +0200
-+++ /tmp/qt3builddir/src/picitem.cpp.patched	2016-09-27 15:46:34.320539908 +0300
++++ /tmp/qt3/src/picitem.cpp.patched	2016-09-27 15:46:34.320539908 +0300
 @@ -131,17 +131,17 @@
  	if ( (m_pinSettings->type() == PinSettings::pt_input && onLeft) ||
  			 (m_pinSettings->type() == PinSettings::pt_output && !onLeft) )

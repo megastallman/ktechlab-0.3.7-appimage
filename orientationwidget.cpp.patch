@@ -1,5 +1,5 @@
 --- orientationwidget.cpp	2009-01-28 18:13:29.000000000 +0200
-+++ /tmp/qt3builddir/src/orientationwidget.cpp.patched	2016-09-27 15:43:18.405771520 +0300
++++ /tmp/qt3/src/orientationwidget.cpp.patched	2016-09-27 15:43:18.405771520 +0300
 @@ -184,7 +184,7 @@
  		for ( int col=0; col<4; ++col )
  		{
